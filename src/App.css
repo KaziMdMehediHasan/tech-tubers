@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -26,6 +30,17 @@
 
 .App-link {
   color: #61dafb;
+}
+
+/* custom css */
+
+.app-container{
+
+  background-image: url(./magic_mouse-wallpaper-1920x1080.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: rgb(27, 27, 27);
 }
 
 @keyframes App-logo-spin {
