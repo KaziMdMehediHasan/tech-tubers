@@ -9,4 +9,3 @@ You can view the live site here [Live Site](https://techtuberconference.netlify.
 * Sorting Out Favorite YouTubers
 * Calculate net worth of shortlisted Tech Tubers
 
-# the-superhero-direction-KaziMdMehediHasan
