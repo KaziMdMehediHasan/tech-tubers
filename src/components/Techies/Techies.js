@@ -11,13 +11,13 @@ const Techies = () => {
   //add to favorite event handler
 
   const handleFavorite = (techie) => {
-    
     const newFav = [...fav, techie];
     setFav(newFav);
     console.log(newFav);
   };
 
   //loading data from local JSON file
+
   useEffect(() => {
     fetch("./techguys.json")
       .then((res) => res.json())
