@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# It's a website about the upcoming Tech Youtubers event created with React.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can view the live site here [Live Site](https://app.netlify.com/sites/techtuberconference/overview).
 
 ## Available Scripts
 
