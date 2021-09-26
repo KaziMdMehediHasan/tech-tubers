@@ -1,6 +1,6 @@
 # It's a website about the upcoming Tech Youtubers event created with React.
 
-You can view the live site here [Live Site](https://app.netlify.com/sites/techtuberconference/overview).
+You can view the live site here [Live Site](https://techtuberconference.netlify.app/).
 
 ## Available Scripts
 
