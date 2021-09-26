@@ -11,6 +11,7 @@ const Techies = () => {
   //add to favorite event handler
 
   const handleFavorite = (techie) => {
+    
     const newFav = [...fav, techie];
     setFav(newFav);
     console.log(newFav);

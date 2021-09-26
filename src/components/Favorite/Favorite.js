@@ -21,13 +21,14 @@ const Favorite = (props) => {
   });
   return (
     <div>
-      <h3>Favorite List: {favorite.length}</h3>
+      <h3>Favorite Techies : {favorite.length}</h3>
       <div className="fav-person">{favorite}</div>
       <hr />
       <p className="sub-amount">
         <i>Total Worth : </i>
         <b>
-          {sum.toFixed(2)}millions <span>{worth}</span>
+          <span>{worth} </span>
+          {sum.toFixed(2)}millions
         </b>
       </p>
     </div>

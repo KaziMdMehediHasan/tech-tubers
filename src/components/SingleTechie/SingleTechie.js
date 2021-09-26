@@ -43,13 +43,15 @@ const SingleTechie = (props) => {
           <p>
             <i>Subscribers : </i>
             <strong>
-              {subscribers}millions <span className="sub">{subs}</span>
+              <span className="sub">{subs} </span>
+              {subscribers}millions
             </strong>
           </p>
           <p>
             <i>Net Worth : </i>
             <strong>
-              {netWorth}millions <span className="worth">{worth}</span>
+              <span className="worth">{worth} </span>
+              {netWorth}millions
             </strong>
           </p>
         </div>

@@ -65,6 +65,10 @@ button:hover{
      background-color: rgb(223, 2, 2);
 }
 
+.btn-fav{
+    font-weight: bold;
+}
+
 .btn-yt a{
     text-decoration: none;
     color: white;
