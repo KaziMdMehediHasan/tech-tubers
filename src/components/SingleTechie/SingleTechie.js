@@ -27,7 +27,7 @@ const SingleTechie = (props) => {
           <img src={img} alt="DP" />
         </div>
         <div className="info-container">
-          <h3>Name : {name}</h3>
+          <h3>{name}</h3>
           <p>
             <i>Age : </i>
             <strong>{age}</strong>
