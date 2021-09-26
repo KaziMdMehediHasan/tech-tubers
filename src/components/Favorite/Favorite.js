@@ -13,7 +13,7 @@ const Favorite = (props) => {
   }, 0);
   const favorite = props.favorite.map((techie) => {
     return (
-      <div key={techie.name} className="mini-card">
+      <div key={techie.channelName} className="mini-card">
         <img src={techie.img} alt="person" />
         <h3>{techie.name}</h3>
       </div>

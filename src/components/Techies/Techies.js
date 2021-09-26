@@ -16,17 +16,19 @@ const Techies = () => {
     console.log(newFav);
   };
 
+  //loading data from local JSON file
   useEffect(() => {
     fetch("./techguys.json")
       .then((res) => res.json())
       .then((data) => setTechies(data));
   }, []);
+
   return (
     <div className="parent">
       <div className="techie-container">
         {techies.map((techie) => (
           <SingleTechie
-            key={techie.name}
+            key={techie.channelName} //used channel name because 2 person may share 1 name but they can't share same channel name
             techie={techie}
             handleFavorite={() => handleFavorite(techie)}
           ></SingleTechie>
