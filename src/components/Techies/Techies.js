@@ -5,6 +5,17 @@ import "./Techies.css";
 
 const Techies = () => {
   const [techies, setTechies] = useState([]);
+
+  const [fav, setFav] = useState([]);
+
+  //add to favorite event handler
+
+  const handleFavorite = (techie) => {
+    const newFav = [...fav, techie];
+    setFav(newFav);
+    console.log(newFav);
+  };
+
   useEffect(() => {
     fetch("./techguys.json")
       .then((res) => res.json())
@@ -14,11 +25,14 @@ const Techies = () => {
     <div className="parent">
       <div className="techie-container">
         {techies.map((techie) => (
-          <SingleTechie techie={techie}></SingleTechie>
+          <SingleTechie
+            techie={techie}
+            handleFavorite={() => handleFavorite(techie)}
+          ></SingleTechie>
         ))}
       </div>
       <div>
-        <Favorite></Favorite>
+        <Favorite favorite={fav}></Favorite>
       </div>
     </div>
   );

@@ -1,3 +1,18 @@
 h3{
     text-align: center;
 }
+
+.mini-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.mini-card>img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}

@@ -9,13 +9,17 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const SingleTechie = (props) => {
+  //icons
   const fav = <FontAwesomeIcon icon={faHeart} />;
   const subs = <FontAwesomeIcon icon={faUsers} />;
   const worth = <FontAwesomeIcon icon={faHandHoldingUsd} />;
   const youtube = <FontAwesomeIcon icon={faPlay} />;
-  console.log(props);
+
+  //destructuring properties
+
   const { name, img, channelName, age, netWorth, subscribers, country, link } =
     props.techie;
+
   return (
     <div className="parent-container">
       <div className="card-container">
@@ -51,7 +55,7 @@ const SingleTechie = (props) => {
         </div>
       </div>
       <div className="btn-container">
-        <button>{fav}Add to Favorites</button>
+        <button onClick={props.handleFavorite}>{fav}Add to Favorites</button>
         <button>
           <a href={link}>Youtube {youtube}</a>
         </button>
