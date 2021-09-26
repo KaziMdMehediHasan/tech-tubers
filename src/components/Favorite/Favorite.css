@@ -16,3 +16,7 @@ h3{
     object-fit: cover;
     border-radius: 50%;
 }
+
+.sub-amount{
+    text-align: center;
+}
