@@ -1,30 +1,60 @@
 import React from "react";
 import "./SingleTechie.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHeart,
+  faHandHoldingUsd,
+  faUsers,
+  faPlay,
+} from "@fortawesome/free-solid-svg-icons";
 
 const SingleTechie = (props) => {
+  const fav = <FontAwesomeIcon icon={faHeart} />;
+  const subs = <FontAwesomeIcon icon={faUsers} />;
+  const worth = <FontAwesomeIcon icon={faHandHoldingUsd} />;
+  const youtube = <FontAwesomeIcon icon={faPlay} />;
   console.log(props);
-  const { name, img, channelName, age, netWorth, subscribers, country } =
+  const { name, img, channelName, age, netWorth, subscribers, country, link } =
     props.techie;
   return (
-    <div>
+    <div className="parent-container">
       <div className="card-container">
         <div className="img-container">
           <img src={img} alt="DP" />
         </div>
         <div className="info-container">
-          <h4>Name :{name}</h4>
-          <h5>
-            Age : <strong>{age}</strong>
-          </h5>
-          <h5>Country : {country}</h5>
-          <h5>Channel Name : {channelName}</h5>
-          <h5>Subscribers : {subscribers}millions</h5>
-          <h5>Net Worth : {netWorth}millions</h5>
+          <h3>Name : {name}</h3>
+          <p>
+            <i>Age : </i>
+            <strong>{age}</strong>
+          </p>
+          <p>
+            <i>Country : </i>
+            <strong>{country}</strong>
+          </p>
+          <p>
+            <i>Channel: </i>
+            <strong>{channelName}</strong>
+          </p>
+          <p>
+            <i>Subscribers : </i>
+            <strong>
+              {subscribers}millions {subs}
+            </strong>
+          </p>
+          <p>
+            <i>Net Worth : </i>
+            <strong>
+              {netWorth}millions {worth}
+            </strong>
+          </p>
         </div>
       </div>
       <div className="btn-container">
-        <button>Add to Favorites</button>
-        <button>Check Out the YT Channel</button>
+        <button>{fav}Add to Favorites</button>
+        <button>
+          <a href={link}>Youtube {youtube}</a>
+        </button>
       </div>
     </div>
   );

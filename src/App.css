@@ -1,6 +1,6 @@
-*{
+/* *{
   margin: 0;
-}
+} */
 
 .App {
   text-align: center;
@@ -41,6 +41,11 @@
   background-position: center;
   background-size: cover;
   color: rgb(27, 27, 27);
+
+}
+
+.body-container{
+  padding: 3rem;
 }
 
 @keyframes App-logo-spin {
