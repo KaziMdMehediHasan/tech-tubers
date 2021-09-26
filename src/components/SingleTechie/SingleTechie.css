@@ -1,5 +1,12 @@
 .parent-container{
   box-shadow: 0 0 25px 10px rgba(62, 163, 230, 0.61);
+  transition : transform 0.3s;
+  border-radius: 5px;
+}
+
+.parent-container:hover{
+    background-color: white;
+    transform: scale(1.06);
 }
 
 .card-container{
@@ -43,7 +50,21 @@ button:hover{
     cursor: pointer;
 }
 
-button>a{
+
+
+.sub{
+    color: rgb(32, 216, 170);
+}
+.worth{
+    color: rgb(240, 32, 136);
+}
+
+.btn-yt{
+     background-color: rgb(223, 2, 2);
+}
+
+.btn-yt a{
     text-decoration: none;
-    color: black;
+    color: white;
+    
 }

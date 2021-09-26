@@ -1,6 +1,8 @@
-/* *{
-  margin: 0;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+*{
+  font-family: 'Roboto Condensed', sans-serif;
+}
 
 .App {
   text-align: center;
@@ -35,7 +37,7 @@
 /* custom css */
 
 .app-container{
-
+  color: #303338;
   background-image: url(./magic_mouse-wallpaper-1920x1080.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -45,6 +47,7 @@
 }
 
 .body-container{
+   color: #303338;
   padding: 3rem;
 }
 

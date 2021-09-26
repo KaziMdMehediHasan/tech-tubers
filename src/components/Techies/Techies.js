@@ -26,6 +26,7 @@ const Techies = () => {
       <div className="techie-container">
         {techies.map((techie) => (
           <SingleTechie
+            key={techie.name}
             techie={techie}
             handleFavorite={() => handleFavorite(techie)}
           ></SingleTechie>

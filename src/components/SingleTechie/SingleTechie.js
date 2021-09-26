@@ -37,27 +37,31 @@ const SingleTechie = (props) => {
             <strong>{country}</strong>
           </p>
           <p>
-            <i>Channel: </i>
+            <i>Channel : </i>
             <strong>{channelName}</strong>
           </p>
           <p>
             <i>Subscribers : </i>
             <strong>
-              {subscribers}millions {subs}
+              {subscribers}millions <span className="sub">{subs}</span>
             </strong>
           </p>
           <p>
             <i>Net Worth : </i>
             <strong>
-              {netWorth}millions {worth}
+              {netWorth}millions <span className="worth">{worth}</span>
             </strong>
           </p>
         </div>
       </div>
       <div className="btn-container">
-        <button onClick={props.handleFavorite}>{fav}Add to Favorites</button>
-        <button>
-          <a href={link}>Youtube {youtube}</a>
+        <button className="btn-fav" onClick={props.handleFavorite}>
+          {fav}Add to Favorites
+        </button>
+        <button className="btn-yt">
+          <b>
+            <a href={link}>YouTube {youtube}</a>
+          </b>
         </button>
       </div>
     </div>

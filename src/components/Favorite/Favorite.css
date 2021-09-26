@@ -8,6 +8,7 @@ h3{
     align-items: center;
     text-align: center;
     padding: 10px;
+    border-radius: 5px;
 }
 
 .mini-card>img{
@@ -19,4 +20,12 @@ h3{
 
 .sub-amount{
     text-align: center;
+}
+
+.mini-card:hover{
+    background-color: white;
+}
+
+span{
+    color: rgb(240, 32, 136);
 }
